@@ -8,10 +8,13 @@
   	<!-- Scrolling Nav Stylesheet -->
   	<link rel="stylesheet" href="css/scrolling-nav.css" type="text/css">
   	<!-- Custom Style -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
+    <link href="css/prettify.css" type="text/css" rel="stylesheet" />
+    <link href="css/sons-of-obsidian.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/prettify.js"></script>
   </head>
  
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="prettyPrint()">
     <!-- Navigation -->
     <div id="wrapper" class="col-lg-12">
       <!-- Sidebar -->
@@ -121,6 +124,12 @@
               <div class="alert alert-info">
                 <strong>Info Message!</strong> Consequatur facere deleniti cumque ducimus maiores nemo.
               </div>
+            </div>
+            <div class="col-lg-6">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint linenums"><code>&lt;div class="alert alert-warning"&gt;&lt;strong&gt;Warning Message!&lt;/strong&gt; 
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. &lt;/div&gt;</code>
+              </pre>
             </div>
           </div>
         </section>  
