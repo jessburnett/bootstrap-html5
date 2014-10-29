@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+
+<html> 
   <head>
  	  <meta charset="UTF-8">
   	<title>TransCanada Style Guide</title>
@@ -8,144 +9,464 @@
   	<!-- Scrolling Nav Stylesheet -->
   	<link rel="stylesheet" href="css/scrolling-nav.css" type="text/css">
   	<!-- Custom Style -->
-    <!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
-    <link href="css/prettify.css" type="text/css" rel="stylesheet" />
-    <link href="css/sons-of-obsidian.css" type="text/css" rel="stylesheet" />
-    <script type="text/javascript" src="js/prettify.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sons-of-obsidian"></script>
+    <script src="js/scrolling-nav.js"></script> 
+    <script type="text/javascript">
+      $(document).ready(function () {
+         $(".source").hide();
+         $(".view-source").click(function() {
+             $(".source").show();
+          });
+      });
+    </script>
   </head>
  
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="prettyPrint()">
-    <!-- Navigation -->
+  <body data-spy="scroll">
     <div id="wrapper" class="col-lg-12">
-      <!-- Sidebar -->
+      <nav class="navbar" role="navigation">
+          <div class="navbar-header"> <a class="navbar-brand" href="#"><strong>TransCanada</strong> Style Guide</a></div>
+      </nav>
+    
+      <!-- side nav -->
       <!-- to make a link smooth scroll to another section on the page, give the link the .page-scroll class and set the link target to a corresponding ID on the page.-->
-      <div id="sidebar-wrapper" class="col-lg-2">
-          <ul class="sidebar-nav">
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#alerts">Alerts</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#badges">Badges</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#breadcrumbs">Bread Crumbs</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#buttons">Buttons</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#color">Color Palettes</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#calendar">Calendar</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#dropdown">Dropdown</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#email">Email</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#filters">Filters</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#glyphs">Glyphs</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#grid">Grid</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#header">Header</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#inputs">Inputs</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#labels">Labels</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#list">List Groups</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#login">Log-In</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#menu">Menu</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#pagination">Pagination</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#panels">Panels</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#popups">Pop-Ups</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#progress">Progress Bars</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#side">Side Menu</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#sort">Sort</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#tables">Tables</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#tabs">Tabs</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#templates">Templates</a>
-              </li>
-              <li class="sidebar-brand">
-                  <a class="page-scroll" href="#typography">Typography</a>
-              </li>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+          <ul class=" nav nav-pills nav-stacked">
+              <li><a class="page-scroll" href="#alerts">Alerts</a></li>
+              <li><a class="page-scroll" href="#badges">Badges</a></li>
+              <li><a class="page-scroll" href="#breadcrumbs">Bread Crumbs</a></li>
+              <li><a class="page-scroll" href="#buttons">Buttons</a></li>
+              <li><a class="page-scroll" href="#color">Color Palettes</a></li>
+              <li><a class="page-scroll" href="#calendar">Calendar</a></li>
+              <li><a class="page-scroll" href="#dropdown">Dropdown</a></li>
+              <li><a class="page-scroll" href="#email">Email</a></li>
+              <li><a class="page-scroll" href="#filters">Filters</a></li>
+              <li><a class="page-scroll" href="#glyphs">Glyphs</a></li>
+              <li><a class="page-scroll" href="#grid">Grid</a></li>
+              <li><a class="page-scroll" href="#header">Header</a></li>
+              <li><a class="page-scroll" href="#inputs">Inputs</a></li>
+              <li><a class="page-scroll" href="#labels">Labels</a></li>
+              <li><a class="page-scroll" href="#list">List Groups</a></li>
+              <li><a class="page-scroll" href="#login">Log-In</a></li>
+              <li><a class="page-scroll" href="#menu">Menu</a></li>
+              <li><a class="page-scroll" href="#pagination">Pagination</a></li>
+              <li><a class="page-scroll" href="#panels">Panels</a></li>
+              <li><a class="page-scroll" href="#popups">Pop-Ups</a></li>
+              <li><a class="page-scroll" href="#progress">Progress Bars</a></li>
+              <li><a class="page-scroll" href="#side">Side Menu</a></li>
+              <li><a class="page-scroll" href="#sort">Sort</a></li>
+              <li><a class="page-scroll" href="#tables">Tables</a></li>
+              <li><a class="page-scroll" href="#tabs">Tabs</a></li>
+              <li><a class="page-scroll" href="#templates">Templates</a></li>
+              <li><a class="page-scroll" href="#typography">Typography</a></li>
           </ul>
       </div>
-      <!-- /#sidebar-wrapper -->
+    
 
       <!-- Page Content -->
-      <div id="page-content-wrapper" class="col-lg-10">
+      <div class="col-lg-10 col-md-10 col-sm-10 col-xs-2">
         <section id="alerts">
-          <h1>Alerts</h1>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="alert alert-warning">
-                <strong>Warning Message!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              </div>
-              <div class="alert alert-error">
-                <strong>Error Message!</strong> Numquam quos fuga quam suscipit sapiente perferendis magnam. 
-              </div>
-              <div class="alert alert-success">
-                <strong>Success Message!</strong> Totam officiis dolorum voluptatibus maxime molestiae iste.
-              </div>
-              <div class="alert alert-info">
-                <strong>Info Message!</strong> Consequatur facere deleniti cumque ducimus maiores nemo.
-              </div>
+          <h2>Alerts</h2>
+          <div class="col-lg-12">
+            <div class="alert alert-warning">
+              <strong>Warning Message!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             </div>
-            <div class="col-lg-6">
-             <!-- converted html code to ascii --> 
-              <pre class="prettyprint linenums"><code>&lt;div class="alert alert-warning"&gt;&lt;strong&gt;Warning Message!&lt;/strong&gt; 
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. &lt;/div&gt;</code>
-              </pre>
+            <div class="alert alert-error">
+              <strong>Error Message!</strong> Numquam quos fuga quam suscipit sapiente perferendis magnam. 
+            </div>
+            <div class="alert alert-success">
+              <strong>Success Message!</strong> Totam officiis dolorum voluptatibus maxime molestiae iste.
+            </div>
+            <div class="alert alert-info">
+              <strong>Info Message!</strong> Consequatur facere deleniti cumque ducimus maiores nemo.
+            </div>
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
             </div>
           </div>
-        </section>  
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section> 
+
+        <section id="badges">
+          <h2>Badges</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section> 
+        <section id="breadcrumbs">
+          <h2>Breadcrumbs</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="buttons">
+          <h2>Buttons</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="color">
+          <h2>Color Palettes</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="calendar">
+          <h2>Calendar</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="dropdown">
+          <h2>Dropdown</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="email">
+          <h2>Email</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="filters">
+          <h2>Filters</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="glyphs">
+          <h2>Section Title</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="grid">
+          <h2>Grid</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a class="page-scroll"  href="#">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="header">
+          <h2>Header</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="inputs">
+          <h2>Inputs</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="labels">
+          <h2>Labels</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="list">
+          <h2>List Groups</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="login">
+          <h2>Log-In</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="menu">
+          <h2>Menu</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="pagination">
+          <h2>Pagination</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="panels">
+          <h2>Panels</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="popups">
+          <h2>Pop-Ups</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="progress">
+          <h2>Progress Bars</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="side">
+          <h2>Side Menu</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="sort">
+          <h2>Sort</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="tables">
+          <h2>Tables</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="tabs">
+          <h2>Tabs</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="templates">
+          <h2>Templates</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+
+        <section id="typography">
+          <h2>Typography</h2>
+          <div class="col-lg-12"> 
+            <div class="row">
+              <div class="col-lg-6"><button class="view-source">View Source</button></div>
+              <div class="col-lg-6"><a href="#" class="page-scroll">Back To Top</a></div>
+            </div>
+          </div>
+          <div class="col-lg-12 source">
+             <!-- converted html code to ascii --> 
+              <pre class="prettyprint">&lt;div class="alert alert-warning"&gt;&#10;&#32;&#32;&lt;strong&gt;Warning Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-error"&gt;&#10;&#32;&#32;&lt;strong&gt;Error Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-success"&gt;&#10;&#32;&#32;&lt;strong&gt;Success Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;&#10;&#10;&lt;div class="alert alert-info"&gt;&#10;&#32;&#32;&lt;strong&gt;Info Message!&lt;/strong&gt;Lorem ipsum dolor sit amet.&#10;&lt;/div&gt;</pre>
+          </div>
+        </section>
+        
+
+
       </div>
       <!-- /#page-content-wrapper -->
     </div>
     <!-- /#wrapper -->
-  
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script> 
   </body>
 </html>
